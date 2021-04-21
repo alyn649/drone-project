@@ -40,10 +40,10 @@ void setup() {
 
   digitalWrite(13, HIGH);
 
-  motorA.attach(2);
-  motorB.attach(3);
-  motorC.attach(4);
-  motorD.attach(5);
+  motorA.attach(5);
+  motorB.attach(4);
+  motorC.attach(3);
+  motorD.attach(2);
 
   motorA.setThrottle(0);
   motorB.setThrottle(0);
