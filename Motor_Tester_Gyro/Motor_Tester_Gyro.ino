@@ -81,6 +81,12 @@ void loop() {
     Serial.print(imu.GetGyroY());
     Serial.print(",");
     Serial.print(imu.GetGyroZ());
+    Serial.print(",");
+    Serial.print(imu.GetAngX());
+    Serial.print(",");
+    Serial.print(imu.GetAngY());
+    Serial.print(",");
+    Serial.print(imu.GetAngZ());
     Serial.print("\r");
     
     delay(5);
