@@ -6,7 +6,7 @@
 #define maxT 1000
 
 // uncomment for debugging output DO NOT FLY ENABLED
-#define debug 1
+//#define debug 1
 
 // Object for imu comms
 MPU6050 imu (Wire);
@@ -36,13 +36,13 @@ double ki2 = 0;
 double kd2 = 0;
 
 // angle contorller
-double kp1 = 3;
-double ki1 = 0.2;
-double kd1 = 0.4;
+double kp1 = 4;
+double ki1 = 0.05;
+double kd1 = 0.0;
 
 // rate gyro controller
-double kp = 1.1;
-double ki = 0.012;
+double kp = 1.2;
+double ki = 0.0;
 double kd = 0;
 
 // false satuation cap to reduce windup
@@ -229,11 +229,11 @@ void loop() {
     tzErr = tzRef - tz;
 
     // intergrate error ( only in the air )
-    if(throttle > 200) {
+    //if(throttle > 200) {
       txErrT = sat(txErrT + (txErr * tCycle), -satEff, satEff);
       tyErrT = sat(tyErrT + (tyErr * tCycle), -satEff, satEff);
       tzErrT = sat(tzErrT + (tzErr * tCycle), -satEff, satEff);
-    }
+    //}
 
     // calc ref value for rate controller
     gxRef = (txErr * kp1) + (txErrT * ki1) + ((txErr - txErrL) * kd1);
@@ -244,6 +244,8 @@ void loop() {
     txErrL = txErr;
     tyErrL = tyErr;
     tzErrL = tzErr;
+
+    
 
     // RATE CONTROLLER
     // compute error with angle fed ref
@@ -259,9 +261,9 @@ void loop() {
     }
     
     // calculate final effort
-    effX = (gxErr * kp) + (gxErrT * ki);
-    effY = (gyErr * kp) + (gyErrT * ki);
-    effZ = (gzErr * kp) + (gzErrT * ki);
+    effX = gxRef;//(gxErr * kp) + (gxErrT * ki);
+    effY = gyRef;//(gyErr * kp) + (gyErrT * ki);
+    effZ = gzRef;//(gzErr * kp) + (gzErrT * ki);
 
     #ifdef debug
       Serial.print(vx, 4);
@@ -282,7 +284,7 @@ void loop() {
     #endif
 
     // kill on over 15 degree roll. (safety)
-    if(tx > 15 || tx < -15 || ty > 15 || ty < -15){
+    if(tx > 30 || tx < -30 || ty > 30 || ty < -30){
       killed = true;
       //Serial.println("Over 15 degree roll detected");
     }
@@ -296,6 +298,7 @@ void loop() {
 
     // apply to motors
     if(armed && !killed) {
+      // motor mixing algorithm
       effA = sat(throttle - effX - effY + effZ, 48, maxT);
       effB = sat(throttle + effX - effY - effZ, 48, maxT);
       effC = sat(throttle - effX + effY - effZ, 48, maxT);
