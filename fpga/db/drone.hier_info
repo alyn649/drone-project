@@ -1,0 +1,217 @@
+|drone
+dataIn[0] => dataIn[0].IN1
+dataIn[1] => dataIn[1].IN1
+dataIn[2] => dataIn[2].IN1
+dataIn[3] => dataIn[3].IN1
+dataIn[4] => dataIn[4].IN1
+dataIn[5] => dataIn[5].IN1
+dataIn[6] => dataIn[6].IN1
+dataIn[7] => dataIn[7].IN1
+dataIn[8] => dataIn[8].IN1
+dataIn[9] => dataIn[9].IN1
+dataIn[10] => dataIn[10].IN1
+out <= bitbang16:U1.port1
+clock => clock.IN1
+load => load.IN1
+debug <= bitbang16:U1.port4
+
+
+|drone|dshotpacket:A1
+dataIn[0] => dataOut.IN0
+dataIn[0] => LessThan0.IN22
+dataIn[0] => dataOut[5].DATAIN
+dataIn[1] => dataOut.IN0
+dataIn[1] => LessThan0.IN21
+dataIn[1] => dataOut[6].DATAIN
+dataIn[2] => dataOut.IN0
+dataIn[2] => LessThan0.IN20
+dataIn[2] => dataOut[7].DATAIN
+dataIn[3] => dataOut.IN1
+dataIn[3] => LessThan0.IN19
+dataIn[3] => dataOut[8].DATAIN
+dataIn[4] => dataOut.IN1
+dataIn[4] => LessThan0.IN18
+dataIn[4] => dataOut[9].DATAIN
+dataIn[5] => dataOut.IN1
+dataIn[5] => LessThan0.IN17
+dataIn[5] => dataOut[10].DATAIN
+dataIn[6] => dataOut.IN1
+dataIn[6] => LessThan0.IN16
+dataIn[6] => dataOut[11].DATAIN
+dataIn[7] => dataOut.IN1
+dataIn[7] => LessThan0.IN15
+dataIn[7] => dataOut[12].DATAIN
+dataIn[8] => dataOut.IN1
+dataIn[8] => LessThan0.IN14
+dataIn[8] => dataOut[13].DATAIN
+dataIn[9] => dataOut.IN1
+dataIn[9] => LessThan0.IN13
+dataIn[9] => dataOut[14].DATAIN
+dataIn[10] => dataOut.IN1
+dataIn[10] => LessThan0.IN12
+dataIn[10] => dataOut[15].DATAIN
+dataOut[0] <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= dataIn[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= dataIn[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= dataIn[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[8] <= dataIn[3].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[9] <= dataIn[4].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[10] <= dataIn[5].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[11] <= dataIn[6].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[12] <= dataIn[7].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[13] <= dataIn[8].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[14] <= dataIn[9].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[15] <= dataIn[10].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1
+dataIn[0] => dataIn[0].IN1
+dataIn[1] => dataIn[1].IN1
+dataIn[2] => dataIn[2].IN1
+dataIn[3] => dataIn[3].IN1
+dataIn[4] => dataIn[4].IN1
+dataIn[5] => dataIn[5].IN1
+dataIn[6] => dataIn[6].IN1
+dataIn[7] => dataIn[7].IN1
+dataIn[8] => dataIn[8].IN1
+dataIn[9] => dataIn[9].IN1
+dataIn[10] => dataIn[10].IN1
+dataIn[11] => dataIn[11].IN1
+dataIn[12] => dataIn[12].IN1
+dataIn[13] => dataIn[13].IN1
+dataIn[14] => dataIn[14].IN1
+dataIn[15] => dataIn[15].IN1
+out <= bitbang:U1.port4
+clock => clock.IN1
+load => load.IN1
+debug <= less15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1|reg16bit:Reg_data
+data[0] => val[0]~reg0.DATAIN
+data[1] => val[1]~reg0.DATAIN
+data[2] => val[2]~reg0.DATAIN
+data[3] => val[3]~reg0.DATAIN
+data[4] => val[4]~reg0.DATAIN
+data[5] => val[5]~reg0.DATAIN
+data[6] => val[6]~reg0.DATAIN
+data[7] => val[7]~reg0.DATAIN
+data[8] => val[8]~reg0.DATAIN
+data[9] => val[9]~reg0.DATAIN
+data[10] => val[10]~reg0.DATAIN
+data[11] => val[11]~reg0.DATAIN
+data[12] => val[12]~reg0.DATAIN
+data[13] => val[13]~reg0.DATAIN
+data[14] => val[14]~reg0.DATAIN
+data[15] => val[15]~reg0.DATAIN
+write => val[0]~reg0.CLK
+write => val[1]~reg0.CLK
+write => val[2]~reg0.CLK
+write => val[3]~reg0.CLK
+write => val[4]~reg0.CLK
+write => val[5]~reg0.CLK
+write => val[6]~reg0.CLK
+write => val[7]~reg0.CLK
+write => val[8]~reg0.CLK
+write => val[9]~reg0.CLK
+write => val[10]~reg0.CLK
+write => val[11]~reg0.CLK
+write => val[12]~reg0.CLK
+write => val[13]~reg0.CLK
+write => val[14]~reg0.CLK
+write => val[15]~reg0.CLK
+val[0] <= val[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[1] <= val[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[2] <= val[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[3] <= val[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[4] <= val[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[5] <= val[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[6] <= val[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[7] <= val[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[8] <= val[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[9] <= val[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[10] <= val[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[11] <= val[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[12] <= val[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[13] <= val[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[14] <= val[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[15] <= val[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1|reg4bit:Reg_pos
+data[0] => val[0]~reg0.DATAIN
+data[1] => val[1]~reg0.DATAIN
+data[2] => val[2]~reg0.DATAIN
+data[3] => val[3]~reg0.DATAIN
+write => val[0]~reg0.CLK
+write => val[1]~reg0.CLK
+write => val[2]~reg0.CLK
+write => val[3]~reg0.CLK
+val[0] <= val[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[1] <= val[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[2] <= val[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+val[3] <= val[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1|reg1bit:Reg_run
+data => val~reg0.DATAIN
+write => val~reg0.CLK
+val <= val~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1|bitbang:U1
+valIn => valIn.IN1
+clk => clk.IN1
+enable => out.IN1
+enable => done.IN1
+enable => countReset.DATAA
+ld => ld.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+done <= done.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1|bitbang:U1|upcount:C1
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+Reset => Q[4]~reg0.ACLR
+Reset => Q[5]~reg0.ACLR
+Reset => Q[6]~reg0.ACLR
+Reset => Q[7]~reg0.ACLR
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+E => Q[7]~reg0.ENA
+E => Q[6]~reg0.ENA
+E => Q[5]~reg0.ENA
+E => Q[4]~reg0.ENA
+E => Q[3]~reg0.ENA
+E => Q[2]~reg0.ENA
+E => Q[1]~reg0.ENA
+E => Q[0]~reg0.ENA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|drone|bitbang16:U1|bitbang:U1|reg1bit:Reg_val
+data => val~reg0.DATAIN
+write => val~reg0.CLK
+val <= val~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

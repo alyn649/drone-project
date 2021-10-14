@@ -1,0 +1,30 @@
+module drone(dataIn, out, clock, start);
+	input [15:0]dataIn;
+	input clock, start;
+	output out;
+	
+	16bitbanger U1(dataIn, out, clock, start);
+endmodule
+
+module 16bitbanger(dataIn, out, clock, start);
+	input [15:0]dataIn;
+	input clock, start;
+	output out;
+	
+	reg [15:0]data;
+	reg [3:0]pos;
+	
+	// On a rising edge of the start pin
+	always @(posedge start)
+	begin
+		data = dataIn;
+		pos = 0;
+	end
+	
+	always @(posedge clock)
+	begin
+		pos = pos + 1;
+	end
+	
+	
+endmodule
