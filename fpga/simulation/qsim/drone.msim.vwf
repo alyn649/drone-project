@@ -172,7 +172,7 @@ SIGNAL("drone_vlg_vec_tst|load")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|debug")
+SIGNAL("drone_vlg_vec_tst|done")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -262,7 +262,7 @@ SIGNAL("drone_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~11_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]~15_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -272,7 +272,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~11_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|loadRun~combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]~18")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -282,327 +282,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|loadRun~combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|A1|LessThan0~3_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|load~clkctrl_outclk")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|clock~clkctrl_outclk")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|loadNext~clkctrl_outclk")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~7_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|clock~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|load~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|nextPos~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|nextPos[3]~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[0]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Add0~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Add0~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|LessThan0~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_run|val~regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~15_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|out~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~17_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|done~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|done~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|loadNext~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|countReset~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~8")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]~9_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]~10")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~12")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]~13_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]~14")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~16")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~18")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[7]~19_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[7]~19_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -632,7 +312,7 @@ SIGNAL("drone_vlg_vec_tst|i1|A1|LessThan0~4_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[6]~feeder_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|out~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -642,7 +322,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[6]~feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~0_combout")
+SIGNAL("drone_vlg_vec_tst|i1|load~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -652,7 +332,427 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~1_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]~7_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|clock~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|countReset~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]~8")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]~9_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]~10")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]~12")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]~13_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]~14")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]~16")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]~18")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[7]~19_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]~17_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]~11_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|done~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|loadNext~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|loadNext~clkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]~7_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|load~clkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]~8")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]~10")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]~11_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]~12")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]~14")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]~15_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]~13_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]~16")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]~17_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|Done_L|Q~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|enable~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|enable~regout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[0]~21_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[0]~21_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[1]~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[3]~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~5_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|A1|LessThan0~3_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -672,7 +772,7 @@ SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[2]~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[3]~2_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -682,7 +782,7 @@ SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[3]~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[1]~1_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -692,7 +792,7 @@ SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[1]~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~7_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~6_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -702,7 +802,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~7_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~8_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]~9_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -712,7 +812,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Add0~1_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~9_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -722,7 +822,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Add0~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~4_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~10_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -732,7 +832,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~4_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~5_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~7_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -742,7 +842,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~5_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~2_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~8_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -752,7 +852,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~3_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~11_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -762,7 +862,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~3_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~6_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|Selector0~12_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -772,7 +872,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~6_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~9_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|Reg_val|val~regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -782,7 +882,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Mux0~9_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|Reg_val|val~regout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~5_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -792,7 +892,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|U1|Reg_val|val~regout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]~21_combout")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|out~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -802,297 +902,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]~21_combout")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|out~3_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|out~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|nextPos[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|nextPos[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|nextPos[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|nextPos[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[15]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[14]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[13]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[12]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_data|val[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|out~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1262,7 +1072,7 @@ SIGNAL("drone_vlg_vec_tst|i1|A1|dataOut[0]")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1272,7 +1082,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1282,7 +1092,7 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1292,7 +1102,207 @@ SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]")
 	PARENT = "";
 }
 
-SIGNAL("drone_vlg_vec_tst|i1|U1|Reg_pos|val[0]")
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|data[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1403,6 +1413,86 @@ SIGNAL("drone_vlg_vec_tst|i1|dataIn~combout[1]")
 }
 
 SIGNAL("drone_vlg_vec_tst|i1|dataIn~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1762,14 +1852,15 @@ TRANSITION_LIST("drone_vlg_vec_tst|load")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|debug")
+TRANSITION_LIST("drone_vlg_vec_tst|done")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 485.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 465.0;
+		LEVEL X FOR 30.0;
+		LEVEL 0 FOR 485.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 470.0;
 	}
 }
 
@@ -1778,29 +1869,17 @@ TRANSITION_LIST("drone_vlg_vec_tst|out")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL X FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
@@ -1809,8 +1888,55 @@ TRANSITION_LIST("drone_vlg_vec_tst|out")
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 495.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
 	}
 }
 
@@ -2077,7 +2203,7 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~11_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]~15_combout")
 {
 	NODE
 	{
@@ -2086,32 +2212,121 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~11_combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|loadRun~combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]~18")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 495.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 460.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|LessThan0~3_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[7]~19_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 520.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 439.0;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|LessThan0~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 999.0;
 		LEVEL 1 FOR 1.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|load~clkctrl_outclk")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|LessThan0~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 999.0;
+		LEVEL 0 FOR 1.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|out~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 5.0;
+		LEVEL X FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|load~combout")
 {
 	NODE
 	{
@@ -2124,244 +2339,12 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|load~clkctrl_outclk")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|clock~clkctrl_outclk")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]~7_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|loadNext~clkctrl_outclk")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 495.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 460.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 255.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~7_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
+		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
@@ -2393,7 +2376,40 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~7_combout")
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 485.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -2605,167 +2621,21 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|clock~combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|load~combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|countReset~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 490.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 460.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|nextPos~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 460.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|nextPos[3]~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 485.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 460.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[0]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Add0~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 65.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 515.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Add0~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 515.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 135.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|LessThan0~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 485.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 465.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_run|val~regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 480.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL X FOR 30.0;
+		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 485.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 460.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~15_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]~8")
 {
 	NODE
 	{
@@ -2774,7 +2644,16 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~15_combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|out~2_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]~9_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]~10")
 {
 	NODE
 	{
@@ -2783,7 +2662,7 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|out~2_combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~17_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]~12")
 {
 	NODE
 	{
@@ -2792,7 +2671,7 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~17_combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|done~0_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]~13_combout")
 {
 	NODE
 	{
@@ -2801,7 +2680,79 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|done~0_combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|done~1_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]~14")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]~16")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]~18")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[7]~19_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]~17_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]~11_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|done~0_combout")
 {
 	NODE
 	{
@@ -2815,171 +2766,528 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|loadNext~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 495.0;
-		LEVEL 1 FOR 5.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 490.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 460.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|loadNext~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 490.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 460.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]~7_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|load~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 490.0;
+		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 460.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|countReset~0_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]~8")
 {
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 115.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]~10")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 225.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 210.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 230.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]~11_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 225.0;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 260.0;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]~12")
+{
+	NODE
+	{
+		REPEAT = 1;
 		LEVEL 0 FOR 475.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]~14")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]~15_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]~13_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 475.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 445.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]~16")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]~17_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 505.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Done_L|Q~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 30.0;
+		LEVEL 0 FOR 485.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|enable~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 30.0;
 		LEVEL 1 FOR 485.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 470.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~8")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|enable~regout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL X FOR 30.0;
+		LEVEL 1 FOR 490.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 465.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]~9_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[0]~21_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]~10")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~4_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~12")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]~13_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]~14")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~16")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~18")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[7]~19_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|LessThan0~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 999.0;
-		LEVEL 1 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|LessThan0~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[6]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 470.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[0]~21_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.0;
+		LEVEL X FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|dataOut[1]~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 440.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|dataOut[3]~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 520.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 439.0;
 		LEVEL 0 FOR 1.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~0_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~3_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 105.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 505.0;
+		LEVEL 0 FOR 145.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 55.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~1_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~5_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 105.0;
+		LEVEL 0 FOR 115.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 505.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 55.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|LessThan0~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 520.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 439.0;
+		LEVEL 1 FOR 1.0;
 	}
 }
 
@@ -2994,193 +3302,200 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|dataOut[2]~0_combout")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|dataOut[3]~2_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 520.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 439.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|dataOut[1]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 470.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 440.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~7_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 95.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 95.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Add0~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 245.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 515.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~5_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 205.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 65.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 45.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 65.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~6_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 130.0;
 		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 505.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 115.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Mux0~9_combout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 85.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 185.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~6_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 115.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 90.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 95.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]~9_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 115.0;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~9_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 85.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 55.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~10_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 85.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 270.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 55.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~7_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 115.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 95.0;
+		LEVEL 0 FOR 175.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 55.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 115.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 210.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 115.0;
+		LEVEL 0 FOR 135.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 55.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~11_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 505.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 25.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|Reg_val|val~regout")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Selector0~12_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 95.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|Reg_val|val~regout")
 {
 	NODE
 	{
@@ -3192,423 +3507,172 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|Reg_val|val~regout")
 		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 465.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]~21_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 45.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 495.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|out~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 495.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|out~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 495.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|nextPos[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 255.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|nextPos[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 135.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|nextPos[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 505.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|nextPos[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
 		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 75.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~5_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|out~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 505.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[15]")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|out~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 500.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 500.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 500.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 500.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 970.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 530.0;
-		LEVEL 1 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 500.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 970.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 500.0;
-		LEVEL 0 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 530.0;
-		LEVEL 1 FOR 470.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 970.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_data|val[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 970.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL X FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
@@ -3619,68 +3683,59 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 485.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 495.0;
+		LEVEL 0 FOR 15.0;
 	}
 }
 
@@ -3832,69 +3887,295 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|A1|dataOut[0]")
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 275.0;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 465.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 155.0;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 505.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 265.0;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 245.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 145.0;
 		LEVEL 1 FOR 120.0;
 		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 465.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 115.0;
 	}
 }
 
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]")
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 95.0;
+		LEVEL 0 FOR 85.0;
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 70.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 465.0;
-	}
-}
-
-TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|Reg_pos|val[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 65.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 70.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 465.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 55.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 970.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 530.0;
+		LEVEL 1 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 970.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 530.0;
+		LEVEL 1 FOR 470.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 970.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|data[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 970.0;
 	}
 }
 
@@ -4024,6 +4305,207 @@ TRANSITION_LIST("drone_vlg_vec_tst|i1|dataIn~combout[0]")
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 439.0;
 		LEVEL 0 FOR 1.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+	}
+}
+
+TRANSITION_LIST("drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -4167,7 +4649,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|debug";
+	CHANNEL = "drone_vlg_vec_tst|done";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -4248,7 +4730,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~11_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]~15_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -4257,7 +4739,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|loadRun~combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]~18";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -4266,7 +4748,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|LessThan0~3_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[7]~19_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -4275,7 +4757,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|load~clkctrl_outclk";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|LessThan0~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -4284,7 +4766,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|clock~clkctrl_outclk";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|LessThan0~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -4293,7 +4775,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|loadNext~clkctrl_outclk";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|out~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -4302,7 +4784,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]~feeder_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|load~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -4311,7 +4793,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~7_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -4329,7 +4811,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|load~combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|countReset~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -4338,7 +4820,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|nextPos~1_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]~8";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -4347,7 +4829,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|nextPos[3]~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -4356,7 +4838,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[0]~feeder_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]~10";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -4365,7 +4847,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Add0~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]~12";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -4374,7 +4856,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]~feeder_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]~13_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -4383,7 +4865,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Add0~2_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]~14";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -4392,7 +4874,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]~feeder_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]~16";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -4401,7 +4883,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|LessThan0~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]~18";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -4410,7 +4892,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_run|val~regout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[7]~19_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -4419,7 +4901,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~15_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]~17_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -4428,7 +4910,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|out~2_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -4437,7 +4919,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~17_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]~11_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -4446,7 +4928,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|done~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -4455,7 +4937,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|done~1_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|done~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -4473,7 +4955,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|countReset~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|loadNext~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -4482,7 +4964,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]~8";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -4491,7 +4973,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]~9_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|load~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -4500,7 +4982,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]~10";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]~8";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -4509,7 +4991,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]~12";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]~10";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -4518,7 +5000,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]~13_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]~11_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -4527,7 +5009,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]~14";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]~12";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -4536,7 +5018,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]~16";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]~14";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -4545,7 +5027,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]~18";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]~15_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -4554,7 +5036,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[7]~19_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]~13_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -4563,7 +5045,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|LessThan0~2_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]~16";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -4572,7 +5054,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|LessThan0~4_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]~17_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -4581,7 +5063,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[6]~feeder_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -4590,7 +5072,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Done_L|Q~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -4599,7 +5081,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~1_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|enable~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -4608,7 +5090,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[2]~0_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|enable~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -4617,7 +5099,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[3]~2_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[0]~21_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -4626,7 +5108,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[1]~1_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -4635,7 +5117,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~7_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[0]~21_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -4644,7 +5126,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~8_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -4653,7 +5135,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Add0~1_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[1]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -4662,7 +5144,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~4_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[3]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -4671,7 +5153,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~5_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -4680,7 +5162,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~2_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -4689,7 +5171,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~3_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|LessThan0~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -4698,7 +5180,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~6_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[2]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -4707,7 +5189,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Mux0~9_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -4716,7 +5198,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|Reg_val|val~regout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -4725,7 +5207,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]~21_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -4734,7 +5216,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|out~3_combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -4743,7 +5225,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|out~combout";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -4752,7 +5234,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|nextPos[3]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~10_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -4761,7 +5243,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|nextPos[2]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -4770,7 +5252,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|nextPos[1]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -4779,7 +5261,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|nextPos[0]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~11_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -4788,7 +5270,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[15]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|Selector0~12_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -4797,7 +5279,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[14]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|Reg_val|val~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -4806,7 +5288,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[13]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|LessThan1~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -4815,7 +5297,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[12]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|out~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -4824,7 +5306,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[11]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|out~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
@@ -4833,7 +5315,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[10]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
@@ -4842,7 +5324,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[9]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
@@ -4851,7 +5333,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[8]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
@@ -4860,7 +5342,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[7]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
@@ -4869,7 +5351,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[6]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
@@ -4878,7 +5360,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[5]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 93;
@@ -4887,7 +5369,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[4]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 94;
@@ -4896,7 +5378,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[3]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 95;
@@ -4905,7 +5387,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[2]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 96;
@@ -4914,7 +5396,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[1]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 97;
@@ -4923,7 +5405,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_data|val[0]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 98;
@@ -4932,7 +5414,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[7]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 99;
@@ -4941,7 +5423,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[6]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 100;
@@ -4950,7 +5432,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[5]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 101;
@@ -4959,7 +5441,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[4]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -4968,7 +5450,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[3]";
+	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 103;
@@ -4977,7 +5459,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[2]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 104;
@@ -4986,7 +5468,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[1]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 105;
@@ -4995,7 +5477,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|U1|C1|Q[0]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 106;
@@ -5004,7 +5486,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[15]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 107;
@@ -5013,7 +5495,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[14]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 108;
@@ -5022,7 +5504,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[13]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 109;
@@ -5031,7 +5513,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[12]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 110;
@@ -5040,7 +5522,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[11]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_PosCounter|Q[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 111;
@@ -5049,7 +5531,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[10]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 112;
@@ -5058,7 +5540,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[9]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 113;
@@ -5067,7 +5549,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[8]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 114;
@@ -5076,7 +5558,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[7]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 115;
@@ -5085,7 +5567,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[6]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 116;
@@ -5094,7 +5576,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[5]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 117;
@@ -5103,7 +5585,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[4]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 118;
@@ -5112,7 +5594,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[3]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 119;
@@ -5121,7 +5603,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[2]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 120;
@@ -5130,7 +5612,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[1]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 121;
@@ -5139,7 +5621,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|A1|dataOut[0]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 122;
@@ -5148,7 +5630,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[3]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 123;
@@ -5157,7 +5639,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[2]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 124;
@@ -5166,7 +5648,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[1]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 125;
@@ -5175,7 +5657,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|U1|Reg_pos|val[0]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 126;
@@ -5184,7 +5666,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[10]";
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|data[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 127;
@@ -5193,7 +5675,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[9]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 128;
@@ -5202,7 +5684,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[8]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 129;
@@ -5211,7 +5693,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[7]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 130;
@@ -5220,7 +5702,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[6]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 131;
@@ -5229,7 +5711,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[5]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 132;
@@ -5238,7 +5720,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[4]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 133;
@@ -5247,7 +5729,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[3]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 134;
@@ -5256,7 +5738,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[2]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 135;
@@ -5265,7 +5747,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[1]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 136;
@@ -5274,10 +5756,91 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[0]";
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 137;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|dataIn~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 138;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 139;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 140;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 141;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 142;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 143;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 144;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 145;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "drone_vlg_vec_tst|i1|U1|U_BitBang|C1|Q[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 146;
 	TREE_LEVEL = 0;
 }
 ;

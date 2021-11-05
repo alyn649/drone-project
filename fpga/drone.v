@@ -1,13 +1,51 @@
-module drone(dataIn, out, clock, load, debug);
+module drone(dataIn, out, clock, load, done);
 	input [10:0]dataIn;
 	input clock, load;
-	output out, debug;
-	
+	output out, done;
+
 	wire [15:0] packet;
 	
 	dshotpacket A1(dataIn, packet);
 	
-	bitbang16 U1(packet, out, clock, load, debug);
+	bitbang16v2 U1(packet, out, clock, load, done);
+	
+endmodule
+
+module flipflop (D, Clock, Q);
+	input D, Clock;
+	output reg Q;
+	always @(posedge Clock)
+		Q = D;
+endmodule
+
+module D_latch (D, Clk, Q);
+	input D, Clk;
+	output reg Q;
+	always @(D, Clk)
+		if (Clk)
+			Q = D;
+endmodule
+
+module tflipflop(T, clk, Q);
+	input T, clk;
+	output reg Q;
+	always @()
+	
+endmodule
+
+// 
+module bitbang16v2(dataIn, out, clock, load, done);
+	input [15:0]dataIn;
+	input clock, load;
+	output out, done;
+	
+	// Pulse dimentions
+	parameter high = 2;
+	parameter low = 1;
+	parameter pulse = 3;
+	
+	
+	
 	
 endmodule
 
@@ -28,70 +66,58 @@ module dshotpacket(dataIn, dataOut);
 endmodule
 
 
-module bitbang16(dataIn, out, clock, load, debug);
+module bitbang16(dataIn, out, clock, load, done);
 	input [15:0]dataIn;
 	input clock, load;
-	output out, debug;
-	
-	wire [15:0]data;
-	wire [3:0]pos;
-	
-	reg [3:0]nextPos;
-	reg currBit;
-	
-	wire run;
+	output out, done;
 	
 	wire loadNext;
-	wire done;
-	wire bitbangOut;
-	wire less15;
-	wire loadRun;
+	assign loadNext = (load | doneBit);
 	
-	assign debug = less15;
+	reg val;
 	
-	// On clock rise, either reset on load or increment pos
+	wire doneBit;
+	
+	// Enables module at right time
+	reg enable;
 	always @(posedge clock)
-		begin
-		if(load)
-			nextPos = 0;
-		else if (run)
-			nextPos = pos + 4'b0001;
-		end
+		enable = load | (!done);
 	
-	// Registers for output packet, pos through serial and if the system should run
-	reg16bit Reg_data(dataIn, load, data);
-	reg4bit Reg_pos(nextPos, loadNext, pos);
-	reg1bit Reg_run(less15, loadRun, run);
+	// Done latch
+	D_latch Done_L(!(pos < 16), loadNext, done);
 	
-	// main bit bang module
-	bitbang U1(currBit, clock, run, loadNext, bitbangOut, done);
+	// latch for input data
+	reg [15:0]data;
+	always @(posedge load)
+		data = dataIn;
 	
-	// various connections
-	assign less15 = (pos < 15);
-	assign loadRun = done | (load & clock);
-	assign loadNext = (done & less15 & run) | (load & clock);
-	assign out = bitbangOut;
+	// Increment position every complete output
+	wire [7:0] pos;
+	upcount U_PosCounter(load, !out, enable, pos);
+	
+	// Output bits 
+	bitbang U_BitBang(val, clock, enable, loadNext, out, doneBit);
 		
-	// mux 16 to 1
-	always @(nextPos, data)
-		case(nextPos)
-		0: currBit = data[15];
-		1: currBit = data[14];
-		2: currBit = data[13];
-		3: currBit = data[12];
-		4: currBit = data[11];
-		5: currBit = data[10];
-		6: currBit = data[9];
-		7: currBit = data[8];
-		8: currBit = data[7];
-		9: currBit = data[6];
-		10: currBit = data[5];
-		11: currBit = data[4];
-		12: currBit = data[3];
-		13: currBit = data[2];
-		14: currBit = data[1];
-		15: currBit = data[0];
-		default: currBit = 0;
+	// Mux 16 to 1
+	always @(pos, data)
+		case(pos)
+		0: val = data[15];
+		1: val = data[14];
+		2: val = data[13];
+		3: val = data[12];
+		4: val = data[11];
+		5: val = data[10];
+		6: val = data[9];
+		7: val = data[8];
+		8: val = data[7];
+		9: val = data[6];
+		10: val = data[5];
+		11: val = data[4];
+		12: val = data[3];
+		13: val = data[2];
+		14: val = data[1];
+		15: val = data[0];
+		default: val = 0;
 		endcase
 endmodule
 
@@ -186,14 +212,8 @@ module reg1bit(data, write, val);
 	output reg val;
 	
 	// On rising clock edges, update reg value if write bit high
-	always @(posedge write)
-		val <= data;
+	always @(negedge write)
+			val <= data;
 			
 endmodule
 
-module flipflop (D, Clock, Q);
-	input D, Clock;
-	output reg Q;
-	always @(posedge Clock)
-	Q = D;
-endmodule

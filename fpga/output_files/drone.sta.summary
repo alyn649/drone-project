@@ -3,67 +3,107 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clock'
-Slack : -2.094
-TNS   : -15.555
+Slack : -2.115
+TNS   : -8.846
 
 Type  : Slow Model Setup 'load'
-Slack : -2.070
-TNS   : -3.269
+Slack : -1.991
+TNS   : -3.322
 
-Type  : Slow Model Hold 'clock'
-Slack : -0.788
-TNS   : -3.201
+Type  : Slow Model Setup 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : -1.110
+TNS   : -5.739
 
 Type  : Slow Model Hold 'load'
-Slack : -0.475
-TNS   : -1.771
+Slack : -0.937
+TNS   : -0.937
+
+Type  : Slow Model Hold 'clock'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Slow Model Hold 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : 0.433
+TNS   : 0.000
 
 Type  : Slow Model Recovery 'clock'
-Slack : -4.989
-TNS   : -39.912
+Slack : -2.872
+TNS   : -22.976
+
+Type  : Slow Model Recovery 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : 2.401
+TNS   : 0.000
+
+Type  : Slow Model Removal 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : -2.149
+TNS   : -17.192
 
 Type  : Slow Model Removal 'clock'
-Slack : 0.858
+Slack : 0.039
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'load'
 Slack : -1.631
-TNS   : -28.515
+TNS   : -22.405
 
 Type  : Slow Model Minimum Pulse Width 'clock'
 Slack : -1.631
-TNS   : -23.627
+TNS   : -12.629
+
+Type  : Slow Model Minimum Pulse Width 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : -0.611
+TNS   : -9.776
 
 Type  : Fast Model Setup 'clock'
-Slack : -0.550
-TNS   : -0.790
+Slack : -0.591
+TNS   : -0.591
 
 Type  : Fast Model Setup 'load'
-Slack : -0.549
-TNS   : -0.549
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Fast Model Setup 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : 0.188
+TNS   : 0.000
 
 Type  : Fast Model Hold 'clock'
-Slack : -0.337
-TNS   : -2.466
+Slack : -0.185
+TNS   : -0.185
 
 Type  : Fast Model Hold 'load'
-Slack : -0.224
-TNS   : -0.823
+Slack : -0.072
+TNS   : -0.072
+
+Type  : Fast Model Hold 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : 0.215
+TNS   : 0.000
 
 Type  : Fast Model Recovery 'clock'
-Slack : -1.665
-TNS   : -13.320
+Slack : -0.599
+TNS   : -4.792
+
+Type  : Fast Model Recovery 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : 1.090
+TNS   : 0.000
+
+Type  : Fast Model Removal 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : -0.710
+TNS   : -5.680
 
 Type  : Fast Model Removal 'clock'
-Slack : 0.275
-TNS   : 0.000
+Slack : -0.139
+TNS   : -1.112
 
 Type  : Fast Model Minimum Pulse Width 'load'
 Slack : -1.380
-TNS   : -23.380
+TNS   : -18.380
 
 Type  : Fast Model Minimum Pulse Width 'clock'
 Slack : -1.380
-TNS   : -19.380
+TNS   : -10.380
+
+Type  : Fast Model Minimum Pulse Width 'bitbang16:U1|bitbang:U_BitBang|reg1bit:Reg_val|val'
+Slack : -0.500
+TNS   : -8.000
 
 ------------------------------------------------------------

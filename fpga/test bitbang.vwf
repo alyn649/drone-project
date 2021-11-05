@@ -52,16 +52,6 @@ SIGNAL("dataIn[0]")
 	PARENT = "";
 }
 
-SIGNAL("debug[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
 SIGNAL("load")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -92,104 +82,104 @@ SIGNAL("dataIn[1]")
 	PARENT = "";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q")
+SIGNAL("done")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("pos")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
 	WIDTH = 8;
 	LSB_INDEX = 0;
-	DIRECTION = BURIED;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[7]")
+SIGNAL("pos[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[6]")
+SIGNAL("pos[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[5]")
+SIGNAL("pos[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[4]")
+SIGNAL("pos[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[3]")
+SIGNAL("pos[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[2]")
+SIGNAL("pos[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[1]")
+SIGNAL("pos[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
-SIGNAL("bitbang:U1|upcount:C1|Q[0]")
+SIGNAL("pos[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "bitbang:U1|upcount:C1|Q";
-}
-
-SIGNAL("bitbang:U1|countReset")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "";
+	DIRECTION = OUTPUT;
+	PARENT = "pos";
 }
 
 TRANSITION_LIST("clock")
@@ -212,17 +202,10 @@ TRANSITION_LIST("dataIn[0]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 760.0;
-	}
-}
-
-TRANSITION_LIST("debug[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 650.0;
 	}
 }
 
@@ -232,12 +215,8 @@ TRANSITION_LIST("load")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 770.0;
 	}
 }
 
@@ -256,88 +235,89 @@ TRANSITION_LIST("dataIn[1]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 780.0;
+		LEVEL 1 FOR 280.0;
+		LEVEL 0 FOR 500.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[7]")
+TRANSITION_LIST("done")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[6]")
+TRANSITION_LIST("pos[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[5]")
+TRANSITION_LIST("pos[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[4]")
+TRANSITION_LIST("pos[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[3]")
+TRANSITION_LIST("pos[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[2]")
+TRANSITION_LIST("pos[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[1]")
+TRANSITION_LIST("pos[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|upcount:C1|Q[0]")
+TRANSITION_LIST("pos[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("bitbang:U1|countReset")
+TRANSITION_LIST("pos[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -388,7 +368,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "debug[0]";
+	CHANNEL = "done";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -397,7 +377,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q";
+	CHANNEL = "pos";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 6;
@@ -407,7 +387,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[7]";
+	CHANNEL = "pos[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 7;
@@ -417,7 +397,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[6]";
+	CHANNEL = "pos[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 8;
@@ -427,7 +407,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[5]";
+	CHANNEL = "pos[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 9;
@@ -437,7 +417,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[4]";
+	CHANNEL = "pos[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 10;
@@ -447,7 +427,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[3]";
+	CHANNEL = "pos[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 11;
@@ -457,7 +437,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[2]";
+	CHANNEL = "pos[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 12;
@@ -467,7 +447,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[1]";
+	CHANNEL = "pos[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 13;
@@ -477,21 +457,12 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang:U1|upcount:C1|Q[0]";
+	CHANNEL = "pos[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
 	PARENT = 6;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bitbang:U1|countReset";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 15;
-	TREE_LEVEL = 0;
 }
 
 TIME_BAR

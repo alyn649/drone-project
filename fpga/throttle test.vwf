@@ -28,7 +28,7 @@ HEADER
 	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
-	GRID_PERIOD = 10.0;
+	GRID_PERIOD = 5.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
@@ -182,107 +182,7 @@ SIGNAL("load")
 	PARENT = "";
 }
 
-SIGNAL("bitbang16:U1|nextPos")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("bitbang16:U1|nextPos[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|nextPos";
-}
-
-SIGNAL("bitbang16:U1|nextPos[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|nextPos";
-}
-
-SIGNAL("bitbang16:U1|nextPos[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|nextPos";
-}
-
-SIGNAL("bitbang16:U1|nextPos[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|nextPos";
-}
-
-SIGNAL("bitbang16:U1|reg4bit:Reg_pos|val")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("bitbang16:U1|reg4bit:Reg_pos|val[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg4bit:Reg_pos|val";
-}
-
-SIGNAL("bitbang16:U1|reg4bit:Reg_pos|val[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg4bit:Reg_pos|val";
-}
-
-SIGNAL("bitbang16:U1|reg4bit:Reg_pos|val[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg4bit:Reg_pos|val";
-}
-
-SIGNAL("bitbang16:U1|reg4bit:Reg_pos|val[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg4bit:Reg_pos|val";
-}
-
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val")
+SIGNAL("bitbang16:U1|data")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -292,167 +192,257 @@ SIGNAL("bitbang16:U1|reg16bit:Reg_data|val")
 	PARENT = "";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[15]")
+SIGNAL("bitbang16:U1|data[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[14]")
+SIGNAL("bitbang16:U1|data[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[13]")
+SIGNAL("bitbang16:U1|data[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[12]")
+SIGNAL("bitbang16:U1|data[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[11]")
+SIGNAL("bitbang16:U1|data[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[10]")
+SIGNAL("bitbang16:U1|data[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[9]")
+SIGNAL("bitbang16:U1|data[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[8]")
+SIGNAL("bitbang16:U1|data[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[7]")
+SIGNAL("bitbang16:U1|data[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[6]")
+SIGNAL("bitbang16:U1|data[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[5]")
+SIGNAL("bitbang16:U1|data[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[4]")
+SIGNAL("bitbang16:U1|data[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[3]")
+SIGNAL("bitbang16:U1|data[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[2]")
+SIGNAL("bitbang16:U1|data[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[1]")
+SIGNAL("bitbang16:U1|data[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("bitbang16:U1|reg16bit:Reg_data|val[0]")
+SIGNAL("bitbang16:U1|data[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = REGISTERED;
-	PARENT = "bitbang16:U1|reg16bit:Reg_data|val";
+	PARENT = "bitbang16:U1|data";
 }
 
-SIGNAL("debug")
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("bitbang16:U1|upcount:U_PosCounter|Q[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "bitbang16:U1|upcount:U_PosCounter|Q";
+}
+
+SIGNAL("done")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -628,87 +618,7 @@ TRANSITION_LIST("load")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|nextPos[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|nextPos[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|nextPos[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|nextPos[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|reg4bit:Reg_pos|val[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|reg4bit:Reg_pos|val[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|reg4bit:Reg_pos|val[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|reg4bit:Reg_pos|val[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 999.0;
-		LEVEL 0 FOR 1.0;
-	}
-}
-
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[15]")
+TRANSITION_LIST("bitbang16:U1|data[15]")
 {
 	NODE
 	{
@@ -717,7 +627,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[15]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[14]")
+TRANSITION_LIST("bitbang16:U1|data[14]")
 {
 	NODE
 	{
@@ -726,7 +636,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[14]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[13]")
+TRANSITION_LIST("bitbang16:U1|data[13]")
 {
 	NODE
 	{
@@ -735,7 +645,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[13]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[12]")
+TRANSITION_LIST("bitbang16:U1|data[12]")
 {
 	NODE
 	{
@@ -744,7 +654,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[12]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[11]")
+TRANSITION_LIST("bitbang16:U1|data[11]")
 {
 	NODE
 	{
@@ -753,7 +663,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[11]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[10]")
+TRANSITION_LIST("bitbang16:U1|data[10]")
 {
 	NODE
 	{
@@ -762,7 +672,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[10]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[9]")
+TRANSITION_LIST("bitbang16:U1|data[9]")
 {
 	NODE
 	{
@@ -771,7 +681,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[9]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[8]")
+TRANSITION_LIST("bitbang16:U1|data[8]")
 {
 	NODE
 	{
@@ -780,7 +690,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[8]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[7]")
+TRANSITION_LIST("bitbang16:U1|data[7]")
 {
 	NODE
 	{
@@ -789,7 +699,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[7]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[6]")
+TRANSITION_LIST("bitbang16:U1|data[6]")
 {
 	NODE
 	{
@@ -798,7 +708,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[6]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[5]")
+TRANSITION_LIST("bitbang16:U1|data[5]")
 {
 	NODE
 	{
@@ -807,7 +717,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[5]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[4]")
+TRANSITION_LIST("bitbang16:U1|data[4]")
 {
 	NODE
 	{
@@ -816,7 +726,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[4]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[3]")
+TRANSITION_LIST("bitbang16:U1|data[3]")
 {
 	NODE
 	{
@@ -825,7 +735,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[3]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[2]")
+TRANSITION_LIST("bitbang16:U1|data[2]")
 {
 	NODE
 	{
@@ -834,7 +744,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[2]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[1]")
+TRANSITION_LIST("bitbang16:U1|data[1]")
 {
 	NODE
 	{
@@ -843,7 +753,7 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[1]")
 	}
 }
 
-TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[0]")
+TRANSITION_LIST("bitbang16:U1|data[0]")
 {
 	NODE
 	{
@@ -852,7 +762,79 @@ TRANSITION_LIST("bitbang16:U1|reg16bit:Reg_data|val[0]")
 	}
 }
 
-TRANSITION_LIST("debug")
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("bitbang16:U1|upcount:U_PosCounter|Q[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("done")
 {
 	NODE
 	{
@@ -1010,17 +992,17 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg4bit:Reg_pos|val";
+	CHANNEL = "bitbang16:U1|data";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 0;
-	CHILDREN = 16, 17, 18, 19;
+	CHILDREN = 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg4bit:Reg_pos|val[3]";
+	CHANNEL = "bitbang16:U1|data[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 16;
@@ -1030,7 +1012,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg4bit:Reg_pos|val[2]";
+	CHANNEL = "bitbang16:U1|data[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 17;
@@ -1040,7 +1022,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg4bit:Reg_pos|val[1]";
+	CHANNEL = "bitbang16:U1|data[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 18;
@@ -1050,7 +1032,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg4bit:Reg_pos|val[0]";
+	CHANNEL = "bitbang16:U1|data[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 19;
@@ -1060,230 +1042,220 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val";
+	CHANNEL = "bitbang16:U1|data[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 20;
-	TREE_LEVEL = 0;
-	CHILDREN = 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36;
+	TREE_LEVEL = 1;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[15]";
+	CHANNEL = "bitbang16:U1|data[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 21;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[14]";
+	CHANNEL = "bitbang16:U1|data[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[13]";
+	CHANNEL = "bitbang16:U1|data[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 23;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[12]";
+	CHANNEL = "bitbang16:U1|data[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[11]";
+	CHANNEL = "bitbang16:U1|data[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[10]";
+	CHANNEL = "bitbang16:U1|data[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[9]";
+	CHANNEL = "bitbang16:U1|data[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[8]";
+	CHANNEL = "bitbang16:U1|data[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[7]";
+	CHANNEL = "bitbang16:U1|data[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[6]";
+	CHANNEL = "bitbang16:U1|data[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[5]";
+	CHANNEL = "bitbang16:U1|data[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[4]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 32;
-	TREE_LEVEL = 1;
-	PARENT = 20;
+	TREE_LEVEL = 0;
+	CHILDREN = 33, 34, 35, 36, 37, 38, 39, 40;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[3]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 33;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[2]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 34;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[1]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 35;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|reg16bit:Reg_data|val[0]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 36;
 	TREE_LEVEL = 1;
-	PARENT = 20;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|nextPos";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 37;
-	TREE_LEVEL = 0;
-	CHILDREN = 38, 39, 40, 41;
+	TREE_LEVEL = 1;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|nextPos[3]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 38;
 	TREE_LEVEL = 1;
-	PARENT = 37;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|nextPos[2]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 39;
 	TREE_LEVEL = 1;
-	PARENT = 37;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|nextPos[1]";
+	CHANNEL = "bitbang16:U1|upcount:U_PosCounter|Q[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 40;
 	TREE_LEVEL = 1;
-	PARENT = 37;
+	PARENT = 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "bitbang16:U1|nextPos[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 41;
-	TREE_LEVEL = 1;
-	PARENT = 37;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "debug";
+	CHANNEL = "done";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 42;
+	TREE_INDEX = 41;
 	TREE_LEVEL = 0;
 }
 

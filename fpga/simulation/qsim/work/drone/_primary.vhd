@@ -6,6 +6,6 @@ entity drone is
         \out\           : out    vl_logic;
         clock           : in     vl_logic;
         load            : in     vl_logic;
-        debug           : out    vl_logic
+        done            : out    vl_logic
     );
 end drone;
